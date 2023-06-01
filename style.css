@@ -21,10 +21,6 @@ div {
     
 }
 
-/* div:nth-child(5) {
-    border: solid 1px black;
-} */
-
 div:nth-child(4),
 div:nth-child(5),
 div:nth-child(6) {

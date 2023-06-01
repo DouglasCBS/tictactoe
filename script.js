@@ -1,6 +1,4 @@
-const body = document.querySelector("body");
-const main = document.createElement("section");
-body.appendChild(main);
+const main = document.querySelector("section");
 
 const gameBoard = (() => {
     let gameBoard = ["X", "X", "X", "X", "O", "O", "O", "O", "X"];
