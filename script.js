@@ -16,6 +16,6 @@ const game = (() => {
 
 })();
 
-const getPlayer = () => {
+const getPlayer = (() => {
     
-};
+})();
