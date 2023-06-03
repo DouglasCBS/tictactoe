@@ -9,7 +9,26 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <form action="." method="post">
+            <label for="playerName">Name: </label>
+            <input type="text" placeholder="Your name" id="playerName" name="playerName" required>
+            <fieldset>
+                <legend>Select your marker: </legend>
+                <ul>
+                    <li>
+                        <label for="markX">X: </label>
+                        <input type="radio" id="markX" name="mark" value="X" checked>
+                    </li>
+                    <li>
+                        <label for="markO">O:</label>
+                        <input type="radio" id="markO" name="mark" value="O">
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">submit</button>
+        </form>
+    </header>
     <section></section>
 </body>
 </html>

@@ -1,4 +1,5 @@
 const main = document.querySelector("section");
+const form = document.querySelector("form");
 
 const gameBoard = (() => {
     let gameBoard = ["X", "X", "X", "X", "O", "O", "O", "O", "X"];
@@ -17,5 +18,11 @@ const game = (() => {
 })();
 
 const getPlayer = (() => {
-    
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let mark = `${document.querySelector("input[name='mark']:checked").value}`;
+        let name = `${document.querySelector("input[name='playerName']").value}`;
+        
+    })
+
 })();
