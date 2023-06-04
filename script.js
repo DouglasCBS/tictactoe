@@ -5,13 +5,14 @@
     const game = (() => {
         const div = []
         let mark = []
-        let count
-        function checkWinner(player) {
+        function checkWinner(winnerMark, player) {
             let cells = document.querySelectorAll("div");
             let i = 0;
+
+            if (winnerMark == player.mark) {winner = player.name}
             
             if (isVictory(cells)) {
-                alert(`${player.name} wins!`);
+                alert(`${winner} wins!`);
                 reset()
             }
         
@@ -47,7 +48,8 @@
                     if (e.target.textContent !== "") return;
                     else  {
                         e.target.textContent = `${player.mark}`;
-                        checkWinner(player)
+                        winnerMark = e.target.textContent;
+                        checkWinner(winnerMark, player);
                     }
                 });
                 main.appendChild(div[i]);
